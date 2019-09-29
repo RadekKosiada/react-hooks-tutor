@@ -38,6 +38,7 @@ function Counter2() {
     <div className="with-hooks">
       <h3>FUNCTION COMPONENT</h3>
       <button >Click me!</button>
+      {/* in a function we can use 'count' directly; WE DON'T NEED this.state.count */}
       <p>Counter (WITH hooks): {count}</p>
     </div>
   );
