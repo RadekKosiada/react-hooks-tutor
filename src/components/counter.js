@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
 
-function Counter() {
-  return (
-    <div>
-      <p>Hello</p>
-    </div>
-  );
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <p>Hello</p>
+      </div>
+    );
+  }
 }
 
 export default Counter;
