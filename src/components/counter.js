@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 class Counter extends React.Component {
   constructor(props) {
@@ -13,12 +13,23 @@ class Counter extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="without-hooks">
+        <h3>CLASS COMPONENT</h3>
         <button onClick={this.addCounter} >Click me!</button>
-        <p>Counter: {this.state.count}</p>
+        <p>Counter (WITHOUT hooks): {this.state.count}</p>
       </div>
     );
   }
 }
 
-export default Counter;
+function Counter2() {
+  return (
+    <div className="with-hooks">
+      <h3>FUNCTION COMPONENT</h3>
+      <button >Click me!</button>
+      <p>Counter (WITH hooks): 0</p>
+    </div>
+  );
+}
+
+export { Counter2, Counter } ;
