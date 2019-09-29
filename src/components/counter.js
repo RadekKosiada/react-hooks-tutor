@@ -32,7 +32,7 @@ function Counter2() {
   // that means useState() returns current state AND a function that updates it;
   const [count, setCount] = useState(0);
   // to store two different values, we call useState() again;
-  const [fruit, setFruit] = useState("banana");
+  const [fruit, setFruit] = useState("banana"); //* (look below!)
   return (
     <div className="with-hooks">
       <h3>FUNCTION COMPONENT</h3>
@@ -45,3 +45,13 @@ function Counter2() {
 }
 
 export { Counter2, Counter };
+
+// const [fruit, setFruit] = useState("banana"); 
+
+// we’re making two new variables fruit and setFruit, where fruit is set to the first value returned by useState, and setFruit is the second. 
+
+// the same as:
+
+// var fruitStateVariable = useState('banana'); // Returns a pair
+// var fruit = fruitStateVariable[0]; // First item in a pair
+// var setFruit = fruitStateVariable[1]; // Second item in a pair
